@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng 8/3</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            font-family: 'Arial', sans-serif;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+        }
+        h1 {
+            color: #e60073;
+            font-size: 28px;
+        }
+        p {
+            font-size: 20px;
+            color: #444;
+            margin-top: 10px;
+        }
+        .flowers {
+            font-size: 60px;
+            animation: bloom 1.5s infinite alternate;
+        }
+        @keyframes bloom {
+            from { transform: scale(1); }
+            to { transform: scale(1.2); }
+        }
+        .decor {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: url('https://i.imgur.com/3Jc7J5a.png') no-repeat center/contain;
+            animation: float 3s infinite alternate;
+        }
+        .decor1 {
+            top: 10px;
+            left: 20px;
+        }
+        .decor2 {
+            bottom: 10px;
+            right: 20px;
+        }
+        @keyframes float {
+            from { transform: translateY(0); }
+            to { transform: translateY(15px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="decor decor1"></div>
+    <div class="decor decor2"></div>
+    <div class="card">
+        <h1>Chúc Mừng Ngày 8/3, Em Yêu! 💖</h1>
+        <p>Chúc em luôn xinh đẹp, hạnh phúc và tràn ngập niềm vui! Anh yêu em nhiều lắm! 💕</p>
+        <div class="flowers">🌸🌼🌺</div>
+    </div>
+</body>
+</html>
