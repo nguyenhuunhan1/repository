@@ -3,69 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chúc Mừng 8/3</title>
+    <title>Bất Ngờ Cho Em</title>
     <style>
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            background-color: lightpink;
             font-family: 'Arial', sans-serif;
         }
         .card {
             background: white;
-            padding: 30px;
-            border-radius: 15px;
+            padding: 20px;
+            border-radius: 10px;
             text-align: center;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-            max-width: 500px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         h1 {
-            color: #e60073;
-            font-size: 28px;
+            color: red;
         }
         p {
-            font-size: 20px;
-            color: #444;
-            margin-top: 10px;
+            font-size: 18px;
         }
-        .flowers {
-            font-size: 60px;
-            animation: bloom 1.5s infinite alternate;
+        .heart {
+            color: red;
+            font-size: 50px;
+            animation: heartbeat 1s infinite;
         }
-        @keyframes bloom {
-            from { transform: scale(1); }
-            to { transform: scale(1.2); }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+            100% { transform: scale(1); }
         }
-        .decor {
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            background: url('https://i.imgur.com/3Jc7J5a.png') no-repeat center/contain;
-            animation: float 3s infinite alternate;
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
         }
-        .decor1 {
-            top: 10px;
-            left: 20px;
-        }
-        .decor2 {
-            bottom: 10px;
-            right: 20px;
-        }
-        @keyframes float {
-            from { transform: translateY(0); }
-            to { transform: translateY(15px); }
+        .btn:hover {
+            background-color: darkred;
         }
     </style>
 </head>
 <body>
-    <div class="decor decor1"></div>
-    <div class="decor decor2"></div>
     <div class="card">
-        <h1>Chúc Mừng Ngày 8/3, Em Yêu! 💖</h1>
-        <p>Chúc em luôn xinh đẹp, hạnh phúc và tràn ngập niềm vui! Anh yêu em nhiều lắm! 💕</p>
-        <div class="flowers">🌸🌼🌺</div>
+        <h1>Bất Ngờ Dành Cho Em! 💖</h1>
+        <p>Bấm vào bên dưới 💕</p>
+        <div class="heart">💖</div>
+        <button class="btn" onclick="window.location.href='code.html'">Đây</button>
     </div>
 </body>
 </html>
